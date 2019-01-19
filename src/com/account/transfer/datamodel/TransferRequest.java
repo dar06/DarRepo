@@ -6,24 +6,24 @@ import java.math.BigDecimal;
 @XmlRootElement
 public class TransferRequest {
 
-    private String fromAccountNumber;
-    private String toAccountNumber;
+    private Account fromAccount;
+    private Account toAccount;
     private BigDecimal amount;
 
-    public String getFromAccountNumber() {
-        return fromAccountNumber;
+    public Account getFromAccount() {
+        return fromAccount;
     }
 
-    public void setFromAccountNumber(String fromAccountNumber) {
-        this.fromAccountNumber = fromAccountNumber;
+    public void setFromAccount(Account fromAccount) {
+        this.fromAccount = fromAccount;
     }
 
-    public String getToAccountNumber() {
-        return toAccountNumber;
+    public Account getToAccount() {
+        return toAccount;
     }
 
-    public void setToAccountNumber(String toAccountNumber) {
-        this.toAccountNumber = toAccountNumber;
+    public void setToAccount(Account toAccount) {
+        this.toAccount = toAccount;
     }
 
     public BigDecimal getAmount() {

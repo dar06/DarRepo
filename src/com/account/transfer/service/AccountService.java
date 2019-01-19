@@ -9,11 +9,5 @@ import java.math.BigDecimal;
 
 public interface AccountService {
 
-    AccountResponse registerAccount(Account account);
-
     TransferResponse transfer(TransferRequest transferRequest);
-
-    Account checkBalance(String accountNumber);
-
-    String testMethod();
 }
